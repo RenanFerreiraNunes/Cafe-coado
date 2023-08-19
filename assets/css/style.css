@@ -1,0 +1,49 @@
+:root {
+    --texto-1: #141413;
+    --bege: #E8D6A4;
+    --cinza: #E3DED1;
+    --cinza-2: #ADAAA0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Estilização da navbar*/
+.navbar {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+/*Estilização do banner*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    height: 60vh;
+    width: 40vw;
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner-text-title {
+    display: block;
+}
+
+/*Estilização dos produtos preview*/
