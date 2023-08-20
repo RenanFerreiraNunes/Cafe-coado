@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café Coado - Home</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +23,18 @@
     <header class="banner">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-                    aria-controls="offcanvasNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex flex-row-reverse align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/logo.png" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                        aria-controls="offcanvasNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
     
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
-                    aria-labelledby="offcanvasNavLabel">
+                    aria-labelledby="offcanvasNavLabel" style="max-width: 250px;">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
@@ -39,7 +43,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">HOME</a>
+                                <a href="#" class="nav-link active" aria-current="page">HOME</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">PRODUTOS</a>
@@ -53,31 +57,26 @@
             </div>
         </nav>
         <section class="banner-text">
-            <h1 class="banner-text-title">
-                JÁ TOMOU SEU CAFÉ HOJE?
-            </h1>
         </section>
     </header>
 
     <main class="container">
-        <section class="produtos">
+        <section class="m-lg-5">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-sm-2">
                     <div class="bebidas text-center">
-                        <h1>BEBIDAS</h1>
-                        <img src="../assets/img/bebidas.png" alt="" class="img-fluid">
+                        <img src="../assets/img/bebidas.png" alt="" class="img-fluid rounded-5">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="doces text-center">
-                        <h1>DOCES</h1>
-                        <img src="../assets/img/doces.png" alt="" class="img-fluid">
+                        <img src="../assets/img/doces.png" alt="" class="img-fluid rounded-5">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-sm-center bg-body-tertiary rounded-5">
                     <article class="more text-center">
                         <h1>Venha conhecer mais!</h1>
-                        <a href="#">PRODUTOS</a>
+                        <a href="#" class="btn btn-outline-dark btn-lg">PRODUTOS</a>
                     </article>
                 </div>
             </div>
