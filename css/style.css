@@ -3,6 +3,7 @@
     --bege: #E8D6A4;
     --cinza: #E3DED1;
     --cinza-2: #ADAAA0;
+    --preto: #000;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 /*Estilização da navbar*/
-.navbar {
+#navbar {
     background: linear-gradient(to bottom, var(--cinza), rgba(255, 255, 255, 0));
 }
 
@@ -26,6 +27,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 
 .banner-text {
@@ -42,6 +44,28 @@
     font-weight: bold;
 } 
 
+.bg-bege {
+    background-color: var(--bege);
+}
+
+.bg-cinza {
+    background-color: var(--texto-1);
+}
+
+.bg-cinza-claro {
+    background-color: var(--cinza-2);
+}
+
+.bg-cinza-claro-2 {
+    background-color: var(--cinza);
+}
+
+.icon-link {
+    display: inline-block;
+    margin-right: 0.5rem; /* Ajuste o espaçamento entre os ícones conforme necessário */
+}
+
+
 /*media querry*/
 
 @media screen and (max-width: 768px) {
@@ -53,5 +77,16 @@
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
+        background-attachment: fixed;
+    }
+
+    .sumir {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sumir-2 {
+        display: none;
     }
 }
