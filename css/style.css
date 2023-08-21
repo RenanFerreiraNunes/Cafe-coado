@@ -80,13 +80,13 @@
         background-attachment: fixed;
     }
 
-    .sumir {
+    .sumir-sm {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .sumir-2 {
+    .sumir-md {
         display: none;
     }
 }
