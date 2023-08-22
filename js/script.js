@@ -1,12 +1,13 @@
 // Selecionar a barra de navegação
 const navbar = document.getElementById("navbar");
 const banner = document.getElementById("banner");
+const bannerHeight = banner.clientHeight;
 
 let prevScrollPos = window.pageYOffset;
 let isScrollingUp = false;
 
 // Definir a posição vertical na qual você deseja alterar o estado da barra (em pixels)
-const scrollThreshold = 1920;
+const scrollThreshold = bannerHeight;
 
 // Função para comparar a altura da barra de navegação com scrollThreshold
 function compareHeight() {
