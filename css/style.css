@@ -29,6 +29,7 @@
     background-color: #E3DED1;
     top: 0;
     width: 100%;
+    animation: aparecerDeCima 0.6s ease forwards;
 }
 
 /*Estilização do banner*/
