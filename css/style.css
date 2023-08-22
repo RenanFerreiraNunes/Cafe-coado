@@ -18,6 +18,14 @@
     background: linear-gradient(to bottom, var(--cinza), rgba(255, 255, 255, 0));
 }
 
+#navbar.scrolling-up {
+    position: fixed;
+    z-index: 2;
+    background-color: #E3DED1;
+    top: 0;
+    width: 100%;
+}
+
 /*Estilização do banner*/
 .banner {
     width: 100%;
