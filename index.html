@@ -64,11 +64,27 @@
 
     <section class="container">
         <div class="row my-4">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container sumir-sm">
                 <img src="./img/bebidas.jpg" alt="Bebidas" loading="lazy" class="img-fluid rounded-2" />
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container sumir-sm">
                 <img src="./img/doces.jpg" alt="Doces" loading="lazy" class="img-fluid rounded-2" />
+            </div>
+            <div id="carouselProducts" class="carousel slide w-100 sumir-md" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bebidas.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/doces.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 mb-4 mt-4">
                 <div class="card h-100">

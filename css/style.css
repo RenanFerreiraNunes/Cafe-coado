@@ -4,6 +4,11 @@
     --cinza: #E3DED1;
     --cinza-2: #ADAAA0;
     --preto: #000;
+    --morningroutine-1: #A69D8D;
+    --morningroutine-2: #736555;
+    --morningroutine-3: #3B220C;
+    --morningroutine-4: #504237;
+    --morningroutine-5: #201E21;
 }
 
 * {
@@ -90,3 +95,30 @@
         display: none;
     }
 }
+
+/*Animações*/
+@keyframes aparecerDeCima {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes aparecerDeBaixo {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+
+  
+  
