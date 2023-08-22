@@ -21,6 +21,7 @@
 /*Estilização da navbar*/
 #navbar {
     background: linear-gradient(to bottom, var(--cinza), rgba(255, 255, 255, 0));
+    
 }
 
 #navbar.scrolling-up {
