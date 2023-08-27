@@ -20,22 +20,17 @@
 }
 
 /*Estilização da navbar*/
-#navbar {
+.fixed {
     background: linear-gradient(to bottom, var(--cinza), rgba(255, 255, 255, 0));
 }
 
-#navbar.scrolling-up {
-    position: fixed;
+.sticky {
+    position: sticky;
     z-index: 20000;
     background-color: var(--branco);
     top: 0;
     width: 100%;
     animation: aparecerDeCima 0.6s ease;
-}
-
-#navbar.scrolling-down {
-    top: -100px; /* Esconda a navegação fora da tela */
-    transition: top 0.3s ease-in-out; /* Adicione uma transição suave para a animação */
 }
 
 /*Estilização do banner*/
