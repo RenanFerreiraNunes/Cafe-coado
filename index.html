@@ -21,44 +21,46 @@
 </head>
 
 <body>
-    <header class="banner">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light" id="navbar">
-        <div class="container-fluid">
-            <div class="d-flex flex-row-reverse align-items-center">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logo.png" alt="" class="img-fluid" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-                    aria-controls="offcanvasNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+    <main class="banner">
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-md navbar-light fixed">
+                <div class="container-fluid">
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./img/logo.png" alt="" class="img-fluid" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
+                        aria-labelledby="offcanvasNavLabel" style="max-width: 250px">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" id="nav-item">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item" id="nav-item">
+                                    <a href="./index.html" class="nav-link active" aria-current="page">HOME</a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a href="./produtos.html" class="nav-link">PRODUTOS</a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a href="./contato.html" class="nav-link">CONTATO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="banner">
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel"
-                style="max-width: 250px">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" id="nav-item">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" id="nav-item">
-                            <a href="./index.html" class="nav-link active"  aria-current="page">HOME</a>
-                        </li>
-                        <li class="nav-item" id="nav-item">
-                            <a href="./produtos.html" class="nav-link">PRODUTOS</a>
-                        </li>
-                        <li class="nav-item" id="nav-item">
-                            <a href="./contato.html" class="nav-link">CONTATO</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-        <section class="banner-text" id="banner">
         </section>
         <main class="borda">
             <section class="container">

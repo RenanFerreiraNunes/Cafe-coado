@@ -30,12 +30,7 @@
     background-color: var(--branco);
     top: 0;
     width: 100%;
-    animation: aparecerDeCima 0.6s ease forwards;
-}
-
-#navbar.scrolling-down {
-    top: -100px; /* Esconda a navegação fora da tela */
-    transition: top 0.3s ease-in-out; /* Adicione uma transição suave para a animação */
+    animation: aparecerDeCima 0.6s ease;
 }
 
 /*Estilização do banner*/
