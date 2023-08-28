@@ -48,3 +48,13 @@ window.onscroll = function() {
   // Comparar a altura da barra de navegação com scrollThreshold
   compareHeight();
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  const botaoRemoverClasse = document.getElementById('botaozinho');
+  const barraNavegacao = document.querySelector('.navbar');
+
+  botaoRemoverClasse.addEventListener('click', function() {
+    // Remove a classe CSS da barra de navegação
+    barraNavegacao.classList.toggle('removida');
+  });
+});
