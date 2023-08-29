@@ -14,6 +14,13 @@ const produtos = [
       imagens: ["./img/cafeteria-2.png", "img/cappuccino2.jpg"],
       preco: 5.49
     },
+    {
+        id: 3,
+        nome: "Café forte",
+        descricao: "Um café forte e gostoso",
+        imagens: ["./img/cafeteria-3.png"],
+        preco: 6.48
+    }
     // Adicione mais produtos aqui...
 ];
   
