@@ -66,48 +66,14 @@
             <section class="row">
                 <aside class="col-md-4 sumir-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad unde fugit, minus veniam facere
-                        eveniet libero iste aut similique illum molestias quam et sed nobis modi delectus fuga reiciendis.
+                        eveniet libero iste aut similique illum molestias quam et sed nobis modi delectus fuga
+                        reiciendis.
                     </p>
                 </aside>
-                <section class="col-md-8">
-                    <section class="row mb-5 g-4">
-                        <div class="col-md-4">
-                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-8">
-                            <article class="h-100">
-                                <h2>Titulo do produto</h2>
-                                <p>Descrição do produto</p>
-                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
-                            </article>
-                        </div>
-                    </section>
-                    <section class="row mb-5 g-4">
-                        <div class="col-md-4">
-                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-8">
-                            <article class="h-100">
-                                <h2>Titulo do produto</h2>
-                                <p>Descrição do produto</p>
-                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
-                            </article>
-                        </div>
-                    </section>
-                    <section class="row mb-5 g-4">
-                        <div class="col-md-4">
-                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-8">
-                            <article class="h-100">
-                                <h2>Titulo do produto</h2>
-                                <p>Descrição do produto</p>
-                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
-                            </article>
-                        </div>
-                    </section>
+                <section class="col-md-8" id="produtos-container">
+
                 </section>
-            </section>  
+            </section>
         </section>
     </main>
 
@@ -158,6 +124,32 @@
             var nav = document.querySelector("header");
             nav.classList.toggle('sticky', window.scrollY > 400);
         })
+
+        const produtosContainer = document.querySelector("#produtos-container");
+
+        produtos.forEach((produto) => {
+            const card = document.createElement("div");
+            card.className = "mb-4";
+
+            card.innerHTML = `
+                <section class="row mb-5 g-4">
+                        <div class="col-md-4">
+                            <img src="${produto.imagens[0]}" alt="Imagem do ${produto.nome}" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <article class="h-100">
+                                <h2>${produto.nome}</h2>
+                                <p>${produto.descricao}</p>
+                                <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
+                                <a href="produto.html?id=${produto.id}" class="btn btn-outline-dark">Ver mais</a>
+                            </article>
+                        </div>
+                </section>
+            `;
+
+            produtosContainer.appendChild(card);
+        });
+
     </script>
 </body>
 
