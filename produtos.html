@@ -64,7 +64,7 @@
     <main class="my-5">
         <section class="container">
             <section class="row">
-                <aside class="col-md-4 sumir-sm">
+                <aside id="navbar-example3" class="col-md-4 sumir-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad unde fugit, minus veniam facere
                         eveniet libero iste aut similique illum molestias quam et sed nobis modi delectus fuga
                         reiciendis.
@@ -141,7 +141,8 @@
                                 <h2>${produto.nome}</h2>
                                 <p>${produto.descricao}</p>
                                 <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
-                                <a href="produto.html?id=${produto.id}" class="btn btn-outline-dark">Ver mais</a>
+                                <!-- No loop de produtos -->
+                                <a href="produto-detalhes.html?id=${produto.id}" class="btn btn-outline-dark">Ver mais</a>
                             </article>
                         </div>
                 </section>
