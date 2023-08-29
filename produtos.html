@@ -29,13 +29,13 @@
                     <a class="navbar-brand" href="./index.html">
                         <img src="./img/logo.png" alt="" class="img-fluid" />
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-                        aria-controls="offcanvasNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel"
-                    style="max-width: 250px">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
+                    aria-labelledby="offcanvasNavLabel" style="max-width: 250px">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
@@ -61,34 +61,53 @@
     <section id="banner-produtos">
 
     </section>
-    <main>
+    <main class="my-5">
         <section class="container">
             <section class="row">
-                <section class="col-md-6">
-                    <div class="card text-center">
-                        <img src="./img/cafeteria-1.png" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eveniet
-                                repellat aperiam. Ipsa doloribus provident nisi asperiores consectetur at. Voluptas, natus.
-                                Quod dolorem ipsum consectetur unde quia pariatur incidunt hic.</p>
-                            <a href="./modelo-produtos.php" class="btn btn-outline-dark">Comprar</a>
+                <aside class="col-md-4 sumir-sm">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad unde fugit, minus veniam facere
+                        eveniet libero iste aut similique illum molestias quam et sed nobis modi delectus fuga reiciendis.
+                    </p>
+                </aside>
+                <section class="col-md-8">
+                    <section class="row mb-5 g-4">
+                        <div class="col-md-4">
+                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
                         </div>
-                    </div>
-                </section>
-                <section class="col-md-6">
-                    <div class="card text-center">
-                        <img src="./img/cafeteria-1.png" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eveniet
-                                repellat aperiam. Ipsa doloribus provident nisi asperiores consectetur at. Voluptas, natus.
-                                Quod dolorem ipsum consectetur unde quia pariatur incidunt hic.</p>
-                            <a href="#" class="btn btn-outline-dark">Comprar</a>
+                        <div class="col-md-8">
+                            <article class="h-100">
+                                <h2>Titulo do produto</h2>
+                                <p>Descrição do produto</p>
+                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
+                            </article>
                         </div>
-                    </div>
+                    </section>
+                    <section class="row mb-5 g-4">
+                        <div class="col-md-4">
+                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <article class="h-100">
+                                <h2>Titulo do produto</h2>
+                                <p>Descrição do produto</p>
+                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="row mb-5 g-4">
+                        <div class="col-md-4">
+                            <img src="./img/cafeteria-1.png" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <article class="h-100">
+                                <h2>Titulo do produto</h2>
+                                <p>Descrição do produto</p>
+                                <a href="#" class="btn btn-outline-dark">Ver mais</a>
+                            </article>
+                        </div>
+                    </section>
                 </section>
-            </section>
+            </section>  
         </section>
     </main>
 
@@ -134,6 +153,12 @@
     <!-- No final do corpo do documento -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var nav = document.querySelector("header");
+            nav.classList.toggle('sticky', window.scrollY > 400);
+        })
+    </script>
 </body>
 
 </html>
