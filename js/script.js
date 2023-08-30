@@ -36,8 +36,13 @@ function carregarDetalhesDoProduto(produto) {
     `).join('');
 
     const detalhesHTML = `
-        <h1 class="display-3 text-center m-5">${produto.nome}</h1>
-        <div class="row">
+    <section class="container-fluid mb-4">
+        <div class="bg-escuro row">
+            <h1 class="display-3 text-center m-5 text-white">${produto.nome}</h1>
+        </div>
+    </section>
+    <section class="container">
+            <div class="row">
             <div class="col-md-6">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
@@ -56,16 +61,19 @@ function carregarDetalhesDoProduto(produto) {
                 </div>
             </div>
             <div class="col-md-6">
-                <article class="d-flex flex-column align-items-center">
-                    <h2 class="text-center my-5">${produto.nome}</h2>
-                    <p class="">${produto.descricao}</p>
-                    <h1 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(2)}</h1>
-                    <a href="#" class="btn btn-outline-dark text-center">
+                <article class="d-flex flex-column align-items-center justify-content-center h-100">
+                    <h2 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(2)}</h2>
+                    <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
                     </a>
                 </article>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <p class="text-center my-5">${produto.descricao}</p>
+        </div>
+    </section>
     `;
 
     produtoDetalhesContainer.innerHTML = detalhesHTML;

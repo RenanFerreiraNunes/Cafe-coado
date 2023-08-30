@@ -50,6 +50,7 @@
     width: 100%;
     height: 70vh;
     background-size: cover;
+    background-position: center;
 }
 
 .banner-text {
@@ -102,6 +103,14 @@
         background-position: center;
         position: relative;
         background-attachment: fixed;
+    }
+
+    #banner-produtos {
+        background-image: url('../img/banner-produtos-celular.png');
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
     }
 
     .sumir-sm {
