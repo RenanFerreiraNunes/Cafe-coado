@@ -93,6 +93,10 @@
     background-color: var(--morningroutine-5);
 }
 
+.bg-escuro-2 {
+    background-color: var(--morningroutine-4);
+}
+
 /*media querry*/
 
 @media screen and (max-width: 768px) {

@@ -138,12 +138,11 @@
             card.innerHTML = `
                 <section class="row mb-5 g-4">
                         <div class="col-md-4">
-                            <img src="${produto.imagens[0]}" alt="Imagem do ${produto.nome}" class="img-fluid rounded">
+                            <img src="${produto.imagens[0]}" alt="Imagem do ${produto.nome}" class="img-thumbnail rounded">
                         </div>
                         <div class="col-md-8">
-                            <article class="h-100">
+                            <article class="h-100 d-flex flex-column justify-content-center align-items-center">
                                 <h2>${produto.nome}</h2>
-                                <p>${produto.descricao}</p>
                                 <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
                                 <!-- No loop de produtos -->
                                 <a href="produto-detalhes.html?id=${produto.id}" class="btn btn-outline-dark">Ver mais</a>

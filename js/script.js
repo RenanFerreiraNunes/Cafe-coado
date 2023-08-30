@@ -3,22 +3,22 @@ const produtos = [
     {
       id: 1,
       nome: "Café Espresso",
-      descricao: "Um café forte e aromático.",
-      imagens: ["./img/cafeteria-1.png", "img/espresso2.jpg"],
+      descricao: "Apresentamos o Café Espresso Supremo, a quintessência do sabor concentrado em uma xícara. Cada gole é uma jornada intensa e marcante, com notas de cacau profundo e um toque sutil de frutas maduras. Nossa mistura meticulosamente selecionada de grãos arábica é cuidadosamente torrada para liberar sabores e aromas únicos, criando uma experiência que satisfará até os paladares mais refinados. Permita-se explorar a essência do café em sua forma mais pura e deliciar-se com o nosso Café Espresso Supremo.",
+      imagens: ["./img/imagens-produtos/bebidas/cafe-expresso-1.png",],
       preco: 4.99
     },
     {
       id: 2,
       nome: "Cappuccino",
-      descricao: "Uma mistura de café, leite e espuma de leite.",
-      imagens: ["./img/cafeteria-2.png", "img/cappuccino2.jpg"],
+      descricao: "Apresentamos o Café Espresso Supremo, a quintessência do sabor concentrado em uma xícara. Cada gole é uma jornada intensa e marcante, com notas de cacau profundo e um toque sutil de frutas maduras. Nossa mistura meticulosamente selecionada de grãos arábica é cuidadosamente torrada para liberar sabores e aromas únicos, criando uma experiência que satisfará até os paladares mais refinados. Permita-se explorar a essência do café em sua forma mais pura e deliciar-se com o nosso Café Espresso Supremo.",
+      imagens: ["./img/imagens-produtos/bebidas/capuccino-1.png",],
       preco: 5.49
     },
     {
         id: 3,
-        nome: "Café forte",
-        descricao: "Um café forte e gostoso",
-        imagens: ["./img/cafeteria-3.png"],
+        nome: "Machiatto",
+        descricao: "Apresentamos o Café Espresso Supremo, a quintessência do sabor concentrado em uma xícara. Cada gole é uma jornada intensa e marcante, com notas de cacau profundo e um toque sutil de frutas maduras. Nossa mistura meticulosamente selecionada de grãos arábica é cuidadosamente torrada para liberar sabores e aromas únicos, criando uma experiência que satisfará até os paladares mais refinados. Permita-se explorar a essência do café em sua forma mais pura e deliciar-se com o nosso Café Espresso Supremo.",
+        imagens: ["./img/imagens-produtos/bebidas/machiatto-1.png"],
         preco: 6.48
     }
     // Adicione mais produtos aqui...
@@ -36,12 +36,12 @@ function carregarDetalhesDoProduto(produto) {
     `).join('');
 
     const detalhesHTML = `
-    <section class="container-fluid mb-4">
-        <div class="bg-escuro row">
-            <h1 class="display-3 text-center m-5 text-white">${produto.nome}</h1>
+    <section class="container-fluid mb-5">
+        <div class="bg-escuro-2 row">
+            <h1 class="display-3 text-center p-5 text-white">${produto.nome}</h1>
         </div>
     </section>
-    <section class="container">
+    <section class="container my-5">
             <div class="row">
             <div class="col-md-6">
                 <div id="carouselExample" class="carousel slide">
@@ -70,8 +70,8 @@ function carregarDetalhesDoProduto(produto) {
             </div>
         </div>
         <hr>
-        <div class="row">
-            <p class="text-center my-5">${produto.descricao}</p>
+        <div class="row mx-lg-5">
+            <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao}</p>
         </div>
     </section>
     `;
