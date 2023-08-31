@@ -53,6 +53,10 @@
     background-position: center;
 }
 
+#fita-produtos {
+    background-image: url('../img/fita-produtos.png');
+}
+
 .banner-text {
     height: 60vh;
     width: 40vw;

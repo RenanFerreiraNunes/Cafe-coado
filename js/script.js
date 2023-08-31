@@ -37,7 +37,7 @@ function carregarDetalhesDoProduto(produto) {
 
     const detalhesHTML = `
     <section class="container-fluid mb-5">
-        <div class="bg-escuro-2 row">
+        <div class="row" id="fita-produtos">
             <h1 class="display-3 text-center p-5 text-white">${produto.nome}</h1>
         </div>
     </section>
@@ -62,17 +62,14 @@ function carregarDetalhesDoProduto(produto) {
             </div>
             <div class="col-md-6">
                 <article class="d-flex flex-column align-items-center justify-content-center h-100">
+                    <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao}</p>
                     <h2 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(2)}</h2>
                     <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
                     </a>
                 </article>
             </div>
-        </div>
-        <hr>
-        <div class="row mx-lg-5">
-            <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao}</p>
-        </div>
+        </div>  
     </section>
     `;
 
