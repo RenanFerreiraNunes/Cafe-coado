@@ -21,11 +21,11 @@
 
 /*Botão de voltar ao topo*/
 #voltar-ao-topo {
-    background-color: var(--preto);
-    color: var(--branco);
+    color: var(--cinza-2);
+    font-size: 2rem;
     text-decoration: none;
     padding: 1em;
-    border-radius: 40px;
+    border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -36,7 +36,7 @@
 }
 
 #voltar-ao-topo:hover {
-    background-color: var(--texto-1);
+    color: var(--morningroutine-4);
 }
 
 /*Estilização da navbar*/
