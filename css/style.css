@@ -1,210 +1,217 @@
 :root {
-    --texto-1: #141413;
-    --bege: #E8D6A4;
-    --cinza: #E3DED1;
-    --cinza-2: #ADAAA0;
-    --preto: #000;
-    --branco: #fff;
-    --morningroutine-1: #A69D8D;
-    --morningroutine-2: #736555;
-    --morningroutine-3: #3B220C;
-    --morningroutine-4: #504237;
-    --morningroutine-5: #201E21;
+  --texto-1: #141413;
+  --bege: #e8d6a4;
+  --cinza: #e3ded1;
+  --cinza-2: #adaaa0;
+  --preto: #000;
+  --branco: #fff;
+  --morningroutine-1: #a69d8d;
+  --morningroutine-2: #736555;
+  --morningroutine-3: #3b220c;
+  --morningroutine-4: #504237;
+  --morningroutine-5: #201e21;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Define a cor da barra de rolagem e do fundo */
 ::-webkit-scrollbar {
-    width: 9px; /* Largura da barra de rolagem */
-    border-radius: 10px;
+  width: 9px; /* Largura da barra de rolagem */
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(139, 139, 139); /* Cor da barra de rolagem */
-    transition: all 0.2s ease;
-    border-radius: 10px;
+  background-color: rgb(139, 139, 139); /* Cor da barra de rolagem */
+  transition: all 0.2s ease;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(171, 171, 171); /* Cor da barra de rolagem quando o mouse está em cima*/
+  background-color: rgb(
+    171,
+    171,
+    171
+  ); /* Cor da barra de rolagem quando o mouse está em cima*/
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--branco); /* Cor de fundo */
+  background-color: var(--branco); /* Cor de fundo */
 }
-
 
 /*Botão de voltar ao topo*/
 #voltar-ao-topo {
-    color: var(--cinza-2);
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1em;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 999;
-    display: none;
-    transition: all 0.3s ease;
-    animation: aparecerDeBaixo 0.6s ease;
+  color: var(--cinza-2);
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+  display: none;
+  transition: all 0.3s ease;
+  animation: aparecerDeBaixo 0.6s ease;
 }
 
 #voltar-ao-topo:hover {
-    color: var(--morningroutine-4);
+  color: var(--morningroutine-4);
 }
 
 /*Estilização da navbar*/
 .sticky {
-    position: sticky;
-    z-index: 2000000;
-    background-color: var(--branco);
-    top: 0;
-    width: 100%;
-    animation: aparecerDeCima 0.6s ease;
-    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.097);
+  position: sticky;
+  z-index: 2000000;
+  background-color: var(--branco);
+  top: 0;
+  width: 100%;
+  animation: aparecerDeCima 0.6s ease;
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.097);
 }
 
 /*Estilização do banner*/
 .banner {
-    background-image: url('../img/banner.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    background-attachment: fixed;
+  background-image: url("../img/banner.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
 }
 
 #banner {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #banner-produtos {
-    background-image: url('../img/banner-produtos.png');
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/banner-produtos.png");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
 
 #banner-contato {
-    height: 40vh;
-    width: 100%;
-    background-image: url('../img/banner-contato.png');
-    background-position: center;
+  height: 40vh;
+  width: 100%;
+  background-image: url("../img/banner-contato.png");
+  background-position: center;
 }
 
 #fita-produtos {
-    background-image: url('../img/fita-produtos.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../img/fita-produtos.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
 
 .banner-text {
-    height: 60vh;
-    width: 40vw;
-    text-align: center;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    font-size: 3rem;
-    font-weight: bold;
+  height: 60vh;
+  width: 40vw;
+  text-align: center;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .borda {
-    padding-top: 3em;
-    border-radius: 20px;
-    background-color: var(--branco);
+  padding-top: 3em;
+  border-radius: 20px;
+  background-color: var(--branco);
 }
 
 .bg-bege {
-    background-color: var(--bege);
+  background-color: var(--bege);
 }
 
 .bg-cinza {
-    background-color: var(--texto-1);
+  background-color: var(--texto-1);
 }
 
 .bg-cinza-claro {
-    background-color: var(--cinza-2);
+  background-color: var(--cinza-2);
 }
 
 .bg-cinza-claro-2 {
-    background-color: var(--cinza);
+  background-color: var(--cinza);
 }
 
 .bg-escuro {
-    background-color: var(--morningroutine-5);
+  background-color: var(--morningroutine-5);
 }
 
 .bg-escuro-2 {
-    background-color: var(--morningroutine-4);
+  background-color: var(--morningroutine-4);
 }
 
 /*media querry*/
 
 @media screen and (max-width: 768px) {
-    .banner {
-        background-image: url('../img/banner-celular.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-        background-attachment: fixed;
-    }
+  .banner {
+    background-image: url("../img/banner-celular.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+  }
 
-    #banner-produtos {
-        background-image: url('../img/banner-produtos-celular.png');
-        width: 100%;
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-    }
+  #banner-produtos {
+    background-image: url("../img/banner-produtos-celular.png");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
 
-    .sumir-sm {
-        display: none;
-    }
+  .sumir-sm {
+    display: none;
+  }
+
+  #linha {
+    border-top: 1px solid #000;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .sumir-md {
-        display: none;
-    }
+  .sumir-md {
+    display: none;
+  }
+
+  #linha {
+    border-left: 1px solid #000;
+  }
 }
 
 /*Animações*/
 @keyframes aparecerDeCima {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-  
-@keyframes aparecerDeBaixo {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-}
-  
 
-  
-  
+@keyframes aparecerDeBaixo {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
