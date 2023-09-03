@@ -62,7 +62,7 @@
     <main>
         <section id="banner-contato"></section>
         <section class="container">
-            <h1 class="text-center my-5">O que podemos fazer pra te mamar?</h1>
+            <h1 class="text-center my-5">O que podemos fazer pra te ajudar?</h1>
 
             <div class="row my-5 p-4">
                 <div class="col-md-6 text-end my-2">
@@ -155,11 +155,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Formulário para Candidatura a Balconista -->
-                    <form action="processar-contato.php" method="POST">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input type="hidden" name="accessKey" value="dcf51a34-a86a-4519-877c-57dc9d54ef70">
+                        <input type="hidden" name="redirectTo" value="https://renanferreiranunes.github.io/Cafe-coado/contato.html">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
+                            <input type="text" class="form-control" id="nome" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
@@ -167,7 +168,7 @@
                         </div>
                         <div class="form-group">
                             <label for="mensagem">Mensagem:</label>
-                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                            <textarea class="form-control" id="mensagem" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-success my-5">Enviar Mensagem</button>
                     </form>

@@ -36,9 +36,8 @@ function carregarDetalhesDoProduto(produto) {
     .map(
       (imagem, index) => `
         <div class="carousel-item ${index === 0 ? "active" : ""}">
-            <img src="${imagem}" class="d-block w-100" alt="Imagem ${
-        produto.nome
-      }">
+            <img src="${imagem}" class="d-block w-100" alt="Imagem ${produto.nome
+        }">
         </div>
     `
     )
@@ -47,12 +46,14 @@ function carregarDetalhesDoProduto(produto) {
   const detalhesHTML = `
     <section class="container-fluid mb-5">
         <div class="row" id="fita-produtos">
-            <h1 class="display-3 text-center p-5 text-white">${
-              produto.nome
-            }</h1>
+            <h1 class="display-3 text-center p-5 text-white">${produto.nome}</h1>
         </div>
     </section>
     <section class="container my-5">
+    <a class="icon-link icon-link-hover" href="./produtos.html" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+    <i class="bi bi-arrow-left"></i>
+    Voltar
+    </a>
             <div class="row">
             <div class="col-md-6">
                 <div id="carouselExample" class="carousel slide">
@@ -73,12 +74,11 @@ function carregarDetalhesDoProduto(produto) {
             </div>
             <div class="col-md-6">
                 <article class="d-flex flex-column align-items-center justify-content-center h-100">
-                    <p class=" my-5"><strong>Descrição:</strong> ${
-                      produto.descricao
-                    }</p>
+                    <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao
+    }</p>
                     <h2 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(
-                      2
-                    )}</h2>
+      2
+    )}</h2>
                     <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
                     </a>
@@ -121,7 +121,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+  if (
+    document.body.scrollTop > 1000 ||
+    document.documentElement.scrollTop > 1000
+  ) {
     document.getElementById("voltar-ao-topo").style.display = "block";
   } else {
     document.getElementById("voltar-ao-topo").style.display = "none";
