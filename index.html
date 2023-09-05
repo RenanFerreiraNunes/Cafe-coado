@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <main class="banner" id="inicio">
+    <main class="banner">
         <header>
             <!--Navbar-->
             <nav class="navbar navbar-expand-md navbar-dark fixed">
@@ -35,7 +35,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
+                    <div class="offcanvas offcanvas-start bg-cinza-claro" tabindex="-1" id="offcanvasNav"
                         aria-labelledby="offcanvasNavLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
@@ -69,10 +69,12 @@
                 in the classic <br>
                 way.
             </h1>
+            <a href="#inicio" class="nav-link"><i class="bi bi-caret-down-fill display-1 justify-content-center d-flex text-white" id="seta"></i></a>
         </section>
+        
         <main class="borda">
             <section class="container">
-                <div class="row my-5">
+                <div class="row my-5" id="inicio">
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container sumir-sm">
                         <img src="./img/bebidas.jpg" alt="Bebidas" loading="lazy" class="img-fluid rounded-2 img" />
                     </div>
@@ -106,9 +108,9 @@
                 </div>
             </section>
             <section class="container-fluid bg-cinza-claro my-5">
-                <div class="row">
+                <div class="row py-3">
                     <div class="col-md-6">
-                        <img src="./img/img-cafe-1.jpg" alt="Imagem de café" class="img-fluid">
+                        <img src="./img/img-cafe-1.jpg" alt="Imagem de café" class="img-fluid rounded">
                     </div>
                     <div class="col-md-6 my-5">
                         <div class="d-flex flex-column justify-content-center align-items-center h-100 mx-md-5">
@@ -313,7 +315,7 @@
     <script>
         window.addEventListener('scroll', function () {
             var nav = document.querySelector("header");
-            nav.classList.toggle('sticky', window.scrollY > 800);
+            nav.classList.toggle('sticky', window.scrollY > 900);
         })
     </script>
 </body>
