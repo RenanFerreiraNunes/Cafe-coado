@@ -24,11 +24,11 @@
     <main class="banner" id="inicio">
         <header>
             <!--Navbar-->
-            <nav class="navbar navbar-expand-md navbar-light fixed">
+            <nav class="navbar navbar-expand-md navbar-dark fixed">
                 <div class="container-fluid">
                     <div class="d-flex flex-row-reverse align-items-center">
                         <a class="navbar-brand" href="./index.html">
-                            <img src="./img/logo.png" alt="" class="img-fluid" />
+                            <img src="./img/logo-branca.png" alt="" class="img-fluid" />
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
@@ -64,7 +64,7 @@
         </header>
         <section id="banner">
             <h1
-                class="display-1 d-flex justify-content-center align-items-center h-75 text-center text-black fw-normal">
+                class="display-1 d-flex justify-content-center align-items-center h-75 text-center text-white fw-normal">
                 Coffee <br>
                 in the classic <br>
                 way.
@@ -72,12 +72,12 @@
         </section>
         <main class="borda">
             <section class="container">
-                <div class="row">
+                <div class="row my-5">
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container sumir-sm">
-                        <img src="./img/bebidas.jpg" alt="Bebidas" loading="lazy" class="img-fluid rounded-2" />
+                        <img src="./img/bebidas.jpg" alt="Bebidas" loading="lazy" class="img-fluid rounded-2 img" />
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4 image-container sumir-sm">
-                        <img src="./img/doces.jpg" alt="Doces" loading="lazy" class="img-fluid rounded-2" />
+                        <img src="./img/doces.jpg" alt="Doces" loading="lazy" class="img-fluid rounded-2 img" />
                     </div>
                     <div id="carouselProducts" class="carousel slide w-100 sumir-md my-4" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -96,21 +96,21 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-4 mt-4">
-                        <div class="card h-100">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="card h-100 p-2">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center bg-cinza-claro text-white">
                                 <h1 class="card-title text-center">Venha conhecer mais!</h1>
-                                <a href="./produtos.html" class="btn btn-outline-dark btn-lg">Produtos</a>
+                                <a href="./produtos.html" class="btn btn-outline-dark btn-lg my-3 text-white">Produtos</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="container-fluid bg-cinza-claro">
-                <div class="row p-2">
+            <section class="container-fluid bg-cinza-claro my-5">
+                <div class="row">
                     <div class="col-md-6">
-                        <img src="./img/img-cafe-1.jpg" alt="Imagem de café" class="img-fluid rounded">
+                        <img src="./img/img-cafe-1.jpg" alt="Imagem de café" class="img-fluid">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 my-5">
                         <div class="d-flex flex-column justify-content-center align-items-center h-100 mx-md-5">
                             <h1 class="display-4 text-center my-3">Compromisso com você</h1>
                             <p>
@@ -269,12 +269,16 @@
     <footer class="bg-escuro text-secondary py-5">
         <div class="container">
             <div class="row">
+                <div class="col-md-4 my-5">
+                    <a href="./index.html"><img src="./img/logo-branca.png" alt=""></a>
+                </div> 
                 <div class="col-md-4 my-4">
                     <h4>Menu</h4>
                     <ul class="nav nav-underline">
-                        <li class="nav-item"><a href="./produtos.html" class="text-white nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="./contato.html" class="text-white nav-link">Contato</a></li>
-                        <li class="nav-item"><a href="./sobre.html" class="text-white nav-link">Sobre nós</a></li>
+                        <li class="nav-item"><a href="./index.html" class="text-white nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="./sobre.html" class="text-white nav-link">CONHEÇA</a></li>
+                        <li class="nav-item"><a href="./produtos.html" class="text-white nav-link">PRODUTOS</a></li>
+                        <li class="nav-item"><a href="./contato.html" class="text-white nav-link">CONTATO</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 my-4">
@@ -287,15 +291,6 @@
                         <li class="nav-item"><a href="" class="text-white nav-link"><i class="bi bi-twitter"></i><span
                                     class="ms-2">Twitter</span></a></li>
                     </ul>
-                </div>
-                <div class="col-md-4 my-5">
-                    <h4>Newsletter</h4>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Digite seu e-mail"
-                            aria-label="Digite seu e-mail" aria-describedby="button-addon">
-                        <button type="button" class="btn btn-outline-success" id="button-addon"><i
-                                class="bi bi-envelope"></i></button>
-                    </div>
                 </div>
             </div>
             <hr class="mt-4">

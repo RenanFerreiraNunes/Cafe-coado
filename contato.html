@@ -21,43 +21,45 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light fixed">
-        <div class="container-fluid">
-            <div class="d-flex flex-row-reverse align-items-center">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logo.png" alt="" class="img-fluid" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-                    aria-controls="offcanvasNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-light fixed">
+            <div class="container-fluid">
+                <div class="d-flex flex-row-reverse align-items-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="" class="img-fluid" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                        aria-controls="offcanvasNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <div class="offcanvas-body" id="nav-item">
-                    <ul class="navbar-nav ms-auto nav-underline">
-                        <li class="nav-item" id="nav-item">
-                            <a href="./index.html" class="nav-link">HOME</a>
-                        </li>
-                        <li class="nav-item" id="nav-item">
-                            <a href="./sobre.html" class="nav-link">CONHEÇA</a>
-                        </li>
-                        <li class="nav-item" id="nav-item">
-                            <a href="./produtos.html" class="nav-link">PRODUTOS</a>
-                        </li>
-                        <li class="nav-item" id="nav-item">
-                            <a href="./contato.html" class="nav-link active" aria-current="page">CONTATO</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="nav-item">
+                        <ul class="navbar-nav ms-auto nav-underline">
+                            <li class="nav-item" id="nav-item">
+                                <a href="./index.html" class="nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item" id="nav-item">
+                                <a href="./sobre.html" class="nav-link">CONHEÇA</a>
+                            </li>
+                            <li class="nav-item" id="nav-item">
+                                <a href="./produtos.html" class="nav-link">PRODUTOS</a>
+                            </li>
+                            <li class="nav-item" id="nav-item">
+                                <a href="./contato.html" class="nav-link active" aria-current="page">CONTATO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <section id="banner-contato"></section>
@@ -104,12 +106,16 @@
     <footer class="bg-escuro text-secondary py-5">
         <div class="container">
             <div class="row">
+                <div class="col-md-4 my-5">
+                    <a href="./index.html"><img src="./img/logo-branca.png" alt=""></a>
+                </div> 
                 <div class="col-md-4 my-4">
                     <h4>Menu</h4>
                     <ul class="nav nav-underline">
-                        <li class="nav-item"><a href="./produtos.html" class="text-white nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="./contato.html" class="text-white nav-link">Contato</a></li>
-                        <li class="nav-item"><a href="./sobre.html" class="text-white nav-link">Sobre nós</a></li>
+                        <li class="nav-item"><a href="./index.html" class="text-white nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="./sobre.html" class="text-white nav-link">CONHEÇA</a></li>
+                        <li class="nav-item"><a href="./produtos.html" class="text-white nav-link">PRODUTOS</a></li>
+                        <li class="nav-item"><a href="./contato.html" class="text-white nav-link">CONTATO</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 my-4">
@@ -122,15 +128,6 @@
                         <li class="nav-item"><a href="" class="text-white nav-link"><i class="bi bi-twitter"></i><span
                                     class="ms-2">Twitter</span></a></li>
                     </ul>
-                </div>
-                <div class="col-md-4 my-5">
-                    <h4>Newsletter</h4>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Digite seu e-mail"
-                            aria-label="Digite seu e-mail" aria-describedby="button-addon">
-                        <button type="button" class="btn btn-outline-success" id="button-addon"><i
-                                class="bi bi-envelope"></i></button>
-                    </div>
                 </div>
             </div>
             <hr class="mt-4">
