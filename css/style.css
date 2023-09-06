@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* Define a cor da barra de rolagem e do fundo */
@@ -169,6 +169,21 @@
 
 .bg-claro {
   background-color: var(--morningroutine-1);
+}
+
+.esconder {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1.6s ease;
+  transform: translateX(-100%);
+}
+
+.aparecer {
+  opacity: 1;
+  transition: all 0.3s ease;
+  filter: blur(0px);
+  transform: translateX(0);
+  transition: all 2s ease;
 }
 
 /*media querry*/
