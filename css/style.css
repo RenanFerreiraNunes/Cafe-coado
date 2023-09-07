@@ -82,6 +82,10 @@
   box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.097);
 }
 
+.img-logo {
+  width: 361px;
+}
+
 /*Estilização do banner*/
 .banner {
   background-image: url("../img/banner.gif");
@@ -183,7 +187,15 @@
   transition: all 0.3s ease;
   filter: blur(0px);
   transform: translateX(0);
-  transition: all 2s ease;
+  transition: all 1.6s ease;
+}
+
+.fade {
+  animation: fadeIn 2s ease forwards;
+}
+
+.fade-nav {
+  animation: fadeIn 0.6s ease forwards;
 }
 
 /*media querry*/
@@ -273,5 +285,15 @@
   }
   100% {
     transform: translateY(0); /* Fim da animação, o objeto volta à posição original */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
