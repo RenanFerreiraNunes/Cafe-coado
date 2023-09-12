@@ -87,6 +87,10 @@
 }
 
 /*Estilização do banner*/
+.fixed {
+  z-index: 999;
+}
+
 .banner {
   background-image: url("../img/banner.gif");
   background-size: cover;
@@ -118,6 +122,12 @@
   width: 100%;
   background-image: url("../img/banner-contato.png");
   background-position: center;
+}
+
+#banner-sobre {
+  width: 100%;
+  height: auto;
+  background-color: var(--cinza-2);
 }
 
 #fita-produtos {
