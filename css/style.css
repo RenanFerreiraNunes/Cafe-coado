@@ -87,6 +87,10 @@
 }
 
 /*Estilização do banner*/
+.fixed {
+  z-index: 999;
+}
+
 .banner {
   background-image: url("../img/banner.gif");
   background-size: cover;
@@ -118,6 +122,12 @@
   width: 100%;
   background-image: url("../img/banner-contato.png");
   background-position: center;
+}
+
+#banner-sobre {
+  width: 100%;
+  height: auto;
+  background-color: var(--cinza-2);
 }
 
 #fita-produtos {
@@ -175,6 +185,10 @@
   background-color: var(--morningroutine-1);
 }
 
+.texto-marrom {
+  color: #3b220c;
+}
+
 .esconder {
   opacity: 0;
   filter: blur(15px);
@@ -222,7 +236,7 @@
     display: none;
   }
 
-  #linha {
+  .linha {
     border-top: 1px solid #000;
   }
 
@@ -248,7 +262,7 @@
     display: none;
   }
 
-  #linha {
+  .linha {
     border-left: 1px solid #000;
   }
 }
