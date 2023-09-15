@@ -62,41 +62,85 @@
 
     <header id="banner-sobre">
         <section class="container py-5">
-            <section class="row my-5">
-                <section class="col-md-6">
-                    <h1>Título</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptates dolor recusandae nobis
-                        veniam rerum reprehenderit placeat modi nemo iusto excepturi, cum impedit, deleniti ex illo! Quaerat
-                        temporibus pariatur obcaecati.
-                    </p>
-                </section>
-                <section class="col-md-6">
-                    <img src="./img/cafeteria-1.png" alt="" class="img-fluid">
+            <section class="row my-5 esconder">
+                <section class="col d-flex justify-content-center">
+                    <img src="./img/logo-branca.png" alt="" class="img-fluid">
                 </section>
             </section>
             <section class="row my-5">
-                <section class="col-md-6">
-                    <img src="./img/cafeteria-1.png" alt="" class="img-fluid">
+                <section class="col-md-6 texto-marrom text-end esconder">
+                    <div class="m-3">
+                        <h1>Bem-Vindo à Café Coado</h1>
+                        <p>
+                            Em Café Coado, nossa paixão é proporcionar uma experiência única em café para cada cliente.
+                            Nosso projeto nasceu da vontade de celebrar a diversidade de sabores e culturas ao redor do
+                            mundo. Com uma cuidadosa seleção de produtos, buscamos agradar a todos os paladares, desde os
+                            mais exigentes até os mais aventureiros.
+                        </p>
+                    </div>
                 </section>
-                <section class="col-md-6">
-                    <h1>Título</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptates dolor recusandae nobis
-                        veniam rerum reprehenderit placeat modi nemo iusto excepturi, cum impedit, deleniti ex illo! Quaerat
-                        temporibus pariatur obcaecati.
-                    </p>
+                <section class="col-md-6 texto-marrom linha esconder">
+                    <div class="m-3">
+                        <h1>Nossa Missão</h1>
+                        <p>
+                            Na Café Coado, acreditamos que um bom café vai além de uma bebida. É uma jornada culinária
+                            global que nos conecta a lugares como a França, Etiópia e Japão. Nosso projeto é mais do que
+                            apenas uma cafeteria; é um portal para explorar a riqueza de sabores e aromas do mundo todo.
+                        </p>
+                    </div>
                 </section>
             </section>
         </section>
     </header>
 
     <main>
+        <!-- Seção sobre a Recepção e os Funcionários -->
+        <section class="container my-5">
+            <div class="row my-5 text-end d-flex justify-content-center align-items-center esconder">
+                <div class="col-md-6">
+                    <h2>Qualidade Inigualável</h2>
+                    <p>
+                        Na Café Coado, estamos comprometidos em oferecer a você a mais alta qualidade de café e produtos
+                        relacionados. Trabalhamos diretamente com produtores de café em todo o mundo para garantir que
+                        cada xícara de café que servimos seja uma experiência única e deliciosa.
+                    </p>
+                    <p>
+                        Nossos produtos são selecionados com cuidado, desde os grãos de café até os acompanhamentos.
+                        Cada item do nosso menu é escolhido para proporcionar uma experiência sensorial inigualável.
+                    </p>
+                    <a href="./produtos.html" class="btn btn-outline-dark my-5">Explore Nossos Produtos</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/img-sobre-1.jpg" alt="Qualidade dos Cafés e Produtos" class="img-fluid">
+                </div>
+            </div>
+            <div class="row my-5 d-flex justify-content-center align-items-center esconder">
+                <div class="col-md-6">
+                    <img src="./img/img-sobre-2.jpg" alt="Recepção e Funcionários" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Recepção Calorosa</h2>
+                    <p>
+                        Na Café Coado, acreditamos que a experiência do cliente vai além do café que servimos. Nossa
+                        equipe de funcionários é dedicada a recebê-lo com um sorriso caloroso e garantir que sua visita
+                        seja inesquecível.
+                    </p>
+                    <p>
+                        Nossos funcionários são treinados para oferecer um atendimento excepcional e estão sempre
+                        prontos para responder às suas perguntas, sugerir o café perfeito e tornar a sua estadia
+                        agradável.
+                    </p>
+                    <p>
+                        Venha nos visitar e experimente a hospitalidade da Café Coado!
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="container-fluid p-0">
-            <h1 class="display-3 text-center m-5">
+            <h1 class="display-3 text-center m-5 esconder">
                 Nossas unidades
             </h1>
-            <div id="carouselExampleRide" class="carousel slide carousel-fade carousel-dark w-100 sumir-sm"
+            <div id="carouselExampleRide" class="carousel slide carousel-fade carousel-dark w-100 sumir-sm esconder"
                 data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
@@ -129,7 +173,7 @@
                 </button>
             </div>
             <!--Esse carrossel só vai aparecer em mobile-->
-            <div id="carouselExampleRideMobile" class="carousel slide carousel-fade sumir-md" data-bs-ride="carousel">
+            <div id="carouselExampleRideMobile" class="carousel slide carousel-fade sumir-md esconder" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleRideMobile" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -161,49 +205,41 @@
                 </button>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container my-5 esconder">
             <div class="row">
-                <div class="col-lg-4 my-3">
+                <div class="col-lg-4 my-3 d-flex align-items-stretch">
                     <div class="card">
                         <img src="./img/cafeteria-1.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Título</h5>
+                            <h5 class="card-title">Café Coado na França</h5>
                             <p class="card-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum ut esse
-                                repellat
-                                consequatur dignissimos obcaecati magnam. Quo facere expedita sapiente, voluptate
-                                veritatis
-                                fuga? Cupiditate a delectus deleniti doloribus officia?
+                                Nossa unidade na França oferece uma autêntica experiência francesa com uma seleção de
+                                cafés e doces requintados. Descubra a elegância parisiense em cada xícara.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 my-3">
+                <div class="col-lg-4 my-3 d-flex align-items-stretch">
                     <div class="card">
                         <img src="./img/cafeteria-2.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Título</h5>
+                            <h5 class="card-title">Café Coado na Etiópia</h5>
                             <p class="card-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum ut esse
-                                repellat
-                                consequatur dignissimos obcaecati magnam. Quo facere expedita sapiente, voluptate
-                                veritatis
-                                fuga? Cupiditate a delectus deleniti doloribus officia?
+                                Nossa unidade na Etiópia leva você às raízes do café. Experimente os sabores autênticos
+                                deste país lendário, onde o café nasceu.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 my-3">
+                <div class="col-lg-4 my-3 d-flex align-items-stretch">
                     <div class="card">
                         <img src="./img/cafeteria-3.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Título</h5>
+                            <h5 class="card-title">Café Coado no Japão</h5>
                             <p class="card-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum ut esse
-                                repellat
-                                consequatur dignissimos obcaecati magnam. Quo facere expedita sapiente, voluptate
-                                veritatis
-                                fuga? Cupiditate a delectus deleniti doloribus officia?
+                                Nossa unidade no Japão oferece uma fusão única de tradição japonesa e café de alta
+                                qualidade. Descubra o equilíbrio perfeito entre a cultura japonesa e o café
+                                contemporâneo.
                             </p>
                         </div>
                     </div>
@@ -254,6 +290,7 @@
     <!-- No final do corpo do documento -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/entries.js"></script>
 </body>
 
 </html>

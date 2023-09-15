@@ -185,6 +185,10 @@
   background-color: var(--morningroutine-1);
 }
 
+.texto-marrom {
+  color: #3b220c;
+}
+
 .esconder {
   opacity: 0;
   filter: blur(15px);
@@ -232,7 +236,7 @@
     display: none;
   }
 
-  #linha {
+  .linha {
     border-top: 1px solid #000;
   }
 
@@ -258,7 +262,7 @@
     display: none;
   }
 
-  #linha {
+  .linha {
     border-left: 1px solid #000;
   }
 }
