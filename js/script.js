@@ -2,40 +2,108 @@
 const produtos = [
   {
     id: 1,
-    nome: "Café Espresso",
+    nome: "Café au lait",
     descricao:
       "Um tiro de café concentrado e encorpado, extraído rapidamente sob alta pressão. Possui sabor intenso e é a base para muitas outras bebidas de café.",
     imagens: [
-      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-1.png",
-      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-2.png",
-      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-3.png",
-      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-4.png",
+      "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-1.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-2.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-3.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-4.jpg",
     ],
     imagem_thumb:
-      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-thumb.png",
+    "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-2.jpg",
     preco: 4.99,
   },
   {
     id: 2,
-    nome: "Cappuccino",
+    nome: "Café creme brulle",
     descricao:
       "Uma mistura de espresso, leite vaporizado e espuma de leite. O cappuccino tem um equilíbrio entre o sabor forte do espresso e a cremosidade do leite vaporizado.",
-    imagens: ["./img/imagens-produtos/bebidas/capuccino-1.png"],
+    imagens: [
+      "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-1.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-2.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-3.jpg",
+      "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-4.jpg",
+
+  ],
     imagem_thumb:
-      "./img/imagens-produtos/bebidas/cappuccino/cappuccino-thumb.png",
+    "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-2.jpg",
     preco: 5.49,
   },
   {
     id: 3,
-    nome: "Machiatto",
+    nome: "The a la lavande",
     descricao:
       "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
-    imagens: ["./img/imagens-produtos/bebidas/machiatto-1.png"],
+    imagens: [
+      "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-1.jpg",
+      "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-2.jpg",
+      "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-3.jpg",
+      "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-4.jpg",
+    ],
     imagem_thumb:
-      "./img/imagens-produtos/bebidas/machiatto/machiatto-thumb.png",
+    "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-1.jpg",
     preco: 6.48,
   },
-  // Adicione mais produtos aqui...
+  {
+    id: 4,
+    nome: "Chocolat chaud",
+    descricao:
+      "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
+    imagens: [
+      "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-1.jpg",
+      "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-2.jpg",
+      "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-3.jpg",
+      "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-3.jpg",
+    preco: 6.48,
+  },
+  {
+    id: 5,
+    nome: "Croissant",
+    descricao:
+      "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
+    imagens: [
+      "./img/imagens-produtos/franca/doces/croissant/Croissant-1.jpg",
+      "./img/imagens-produtos/franca/doces/croissant/Croissant-2.jpg",
+      "./img/imagens-produtos/franca/doces/croissant/Croissant-3.jpg",
+      "./img/imagens-produtos/franca/doces/croissant/Croissant-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/franca/doces/croissant/Croissant-4.jpg",
+    preco: 6.48,
+  },
+  {
+    id: 6,
+    nome: "Mousse au chocolat",
+    descricao:
+      "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
+    imagens: [
+      "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-1.jpg",
+      "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-2.jpg",
+      "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-3.jpg",
+      "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-3.jpg",
+    preco: 6.48,
+  },
+  {
+    id: 7,
+    nome: "Tarte Tatin",
+    descricao:
+      "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
+    imagens: [
+      "./img/imagens-produtos/franca/doces/tarte-tatin/Tarte-Tatin-1.jpg",
+      "./img/imagens-produtos/franca/doces/tarte-tatin/Tarte-Tatin-2.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/franca/doces/tarte-tatin/Tarte-Tatin-2.jpg",
+    preco: 6.48,
+  },
 ];
 
 // No início do arquivo script.js
@@ -47,9 +115,8 @@ function carregarDetalhesDoProduto(produto) {
     .map(
       (imagem, index) => `
         <div class="carousel-item ${index === 0 ? "active" : ""}">
-            <img src="${imagem}" class="d-block w-100" alt="Imagem ${
-        produto.nome
-      }">
+            <img src="${imagem}" class="d-block w-100" alt="Imagem ${produto.nome
+        }">
         </div>
     `
     )
@@ -58,14 +125,13 @@ function carregarDetalhesDoProduto(produto) {
   const detalhesHTML = `
     <section class="container-fluid mb-5">
         <div class="row" id="fita-produtos">
-            <h1 class="display-3 text-center p-5 text-white">${
-              produto.nome
-            }</h1>
+            <h1 class="display-3 text-center p-5 text-white">${produto.nome
+    }</h1>
         </div>
     </section>
     <section class="container my-5">
     <a class="icon-link icon-link-hover" href="./produtos.html" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
-    <i class="bi bi-arrow-left"></i>
+    <i class="bi bi-arrow-left my-3"></i>
     Voltar
     </a>
             <div class="row">
@@ -88,12 +154,11 @@ function carregarDetalhesDoProduto(produto) {
             </div>
             <div class="col-md-6">
                 <article class="d-flex flex-column align-items-center justify-content-center h-100">
-                    <p class=" my-5"><strong>Descrição:</strong> ${
-                      produto.descricao
-                    }</p>
+                    <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao
+    }</p>
                     <h2 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(
-                      2
-                    )}</h2>
+      2
+    )}</h2>
                     <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
                     </a>
