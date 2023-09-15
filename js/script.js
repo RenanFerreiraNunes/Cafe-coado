@@ -5,7 +5,14 @@ const produtos = [
     nome: "Café Espresso",
     descricao:
       "Um tiro de café concentrado e encorpado, extraído rapidamente sob alta pressão. Possui sabor intenso e é a base para muitas outras bebidas de café.",
-    imagens: ["./img/imagens-produtos/bebidas/cafe-expresso-1.png"],
+    imagens: [
+      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-1.png",
+      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-2.png",
+      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-3.png",
+      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-4.png",
+    ],
+    imagem_thumb:
+      "./img/imagens-produtos/bebidas/cafe-espresso/cafe-espresso-thumb.png",
     preco: 4.99,
   },
   {
@@ -14,6 +21,8 @@ const produtos = [
     descricao:
       "Uma mistura de espresso, leite vaporizado e espuma de leite. O cappuccino tem um equilíbrio entre o sabor forte do espresso e a cremosidade do leite vaporizado.",
     imagens: ["./img/imagens-produtos/bebidas/capuccino-1.png"],
+    imagem_thumb:
+      "./img/imagens-produtos/bebidas/cappuccino/cappuccino-thumb.png",
     preco: 5.49,
   },
   {
@@ -22,6 +31,8 @@ const produtos = [
     descricao:
       "Um espresso manchado com uma pequena quantidade de leite vaporizado. É uma opção mais forte e intensa para quem gosta do sabor do café puro.",
     imagens: ["./img/imagens-produtos/bebidas/machiatto-1.png"],
+    imagem_thumb:
+      "./img/imagens-produtos/bebidas/machiatto/machiatto-thumb.png",
     preco: 6.48,
   },
   // Adicione mais produtos aqui...
@@ -36,8 +47,9 @@ function carregarDetalhesDoProduto(produto) {
     .map(
       (imagem, index) => `
         <div class="carousel-item ${index === 0 ? "active" : ""}">
-            <img src="${imagem}" class="d-block w-100" alt="Imagem ${produto.nome
-        }">
+            <img src="${imagem}" class="d-block w-100" alt="Imagem ${
+        produto.nome
+      }">
         </div>
     `
     )
@@ -46,7 +58,9 @@ function carregarDetalhesDoProduto(produto) {
   const detalhesHTML = `
     <section class="container-fluid mb-5">
         <div class="row" id="fita-produtos">
-            <h1 class="display-3 text-center p-5 text-white">${produto.nome}</h1>
+            <h1 class="display-3 text-center p-5 text-white">${
+              produto.nome
+            }</h1>
         </div>
     </section>
     <section class="container my-5">
@@ -74,11 +88,12 @@ function carregarDetalhesDoProduto(produto) {
             </div>
             <div class="col-md-6">
                 <article class="d-flex flex-column align-items-center justify-content-center h-100">
-                    <p class=" my-5"><strong>Descrição:</strong> ${produto.descricao
-    }</p>
+                    <p class=" my-5"><strong>Descrição:</strong> ${
+                      produto.descricao
+                    }</p>
                     <h2 class="text-center my-4">Preço: R$ ${produto.preco.toFixed(
-      2
-    )}</h2>
+                      2
+                    )}</h2>
                     <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
                     </a>
