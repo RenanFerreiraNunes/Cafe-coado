@@ -191,15 +191,14 @@
 
 .esconder {
   opacity: 0;
-  transition: all 1.6s ease;
   transform: translateX(-100%);
+  transition: opacity 2s ease;
 }
 
 .aparecer {
   opacity: 1;
-  transition: all 0.3s ease;
   transform: translateX(0);
-  transition: all 1.6s ease;
+  transition: opacity 2s ease;
 }
 
 .aproximar {
