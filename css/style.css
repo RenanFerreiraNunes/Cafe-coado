@@ -191,7 +191,6 @@
 
 .esconder {
   opacity: 0;
-  filter: blur(15px);
   transition: all 1.6s ease;
   transform: translateX(-100%);
 }
@@ -199,7 +198,6 @@
 .aparecer {
   opacity: 1;
   transition: all 0.3s ease;
-  filter: blur(0px);
   transform: translateX(0);
   transition: all 1.6s ease;
 }
