@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(139, 139, 139); /* Cor da barra de rolagem */
+  background-color: rgb(164, 164, 164); /* Cor da barra de rolagem */
   transition: all 0.2s ease;
   border-radius: 10px;
 }
