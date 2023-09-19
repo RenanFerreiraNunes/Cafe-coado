@@ -13,7 +13,7 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-2.jpg",
-    preco: 4.99,
+    preco: 12.50,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const produtos = [
   ],
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-2.jpg",
-    preco: 5.49,
+    preco: 16.75,
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-1.jpg",
-    preco: 6.48,
+    preco: 10.25,
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-3.jpg",
-    preco: 6.48,
+    preco: 14.90,
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/croissant/Croissant-4.jpg",
-    preco: 6.48,
+    preco: 7.50,
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-3.jpg",
-    preco: 6.48,
+    preco: 9.75,
   },
   {
     id: 7,
@@ -102,7 +102,170 @@ const produtos = [
     ],
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/tarte-tatin/Tarte-Tatin-2.jpg",
-    preco: 6.48,
+    preco: 18.95,
+  },
+  {
+    id: 8,
+    nome: "Café Etíope",
+    descricao:
+      "Um café etíope tradicional, preparado na cerimônia do café, com grãos moídos na hora e temperado com especiarias. Uma experiência única.",
+    imagens: [
+      "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-01.jpg",
+      "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-02.jpg",
+      "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-03.jpg",
+      "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-04.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-04.jpg",
+    preco: 11.95,
+  },
+  {
+    id: 9,
+    nome: "Bolo de mel",
+    descricao:
+      "Um bolo etíope de mel, aromatizado com especiarias e servido com uma cobertura de iogurte e mel.",
+    imagens: [
+      "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-01.jpg",
+      "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-02.jpg",
+      "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-03.jpg",
+      "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-04.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-03.jpg",
+    preco: 8.95,
+  },
+  {
+    id: 10,
+    nome: "Injera com Doro Wat",
+    descricao:
+      "Pão injera macio e fermentado, acompanhado de um saboroso ensopado de frango Doro Wat.",
+    imagens: [
+      "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-01.jpg",
+      "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-02.jpg",
+      "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-03.jpg",
+      "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-04.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-04.jpg",
+    preco: 19.50,
+  },
+  {
+    id: 11,
+    nome: "Kolo",
+    descricao:
+      "Amendoins torrados com especiarias etíopes, um acompanhamento perfeito para qualquer bebida.",
+    imagens: [
+      "./img/imagens-produtos/etiopia/doces/kolo/kolo-01.jpg",
+      "./img/imagens-produtos/etiopia/doces/kolo/kolo-02.jpg",
+      "./img/imagens-produtos/etiopia/doces/kolo/kolo-03.jpg",
+      "./img/imagens-produtos/etiopia/doces/kolo/kolo-04.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/etiopia/doces/kolo/kolo-01.jpg",
+    preco: 6.25,
+  },
+  {
+    id: 12,
+    nome: "Café Kyoto",
+    descricao:
+      "Amendoins torrados com especiarias etíopes, um acompanhamento perfeito para qualquer bebida.",
+    imagens: [
+      "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-1.jpg",
+      "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-2.jpg",
+      "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-3.jpg",
+      "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-2.jpg",
+    preco: 10.95,
+  },
+  {
+    id: 13,
+    nome: "Matcha Latte",
+    descricao:
+      "Chá matcha em pó misturado com leite vaporizado, resultando em uma bebida cremosa e energizante.",
+    imagens: [
+      "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-1.jpg",
+      "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-2.jpg",
+      "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-3.jpg",
+      "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-1.jpg",
+    preco: 14.75,
+  },
+  {
+    id: 14,
+    nome: "Sakura Sencha",
+    descricao:
+      "Um chá verde sencha com pétalas de sakura, criando uma infusão perfumada e refrescante.",
+    imagens: [
+      "./img/imagens-produtos/japao/bebidas/sakura-sencha/sakura-sencha-1.jpg",
+      "./img/imagens-produtos/japao/bebidas/sakura-sencha/sakura-sencha-2.jpg",
+      "./img/imagens-produtos/japao/bebidas/sakura-sencha/sakura-sencha-3.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/bebidas/sakura-sencha/sakura-sencha-1.jpg",
+    preco: 12.50,
+  },
+  {
+    id: 15,
+    nome: "Yuzu Sparkler",
+    descricao:
+      "Uma bebida efervescente de yuzu, cítrica e revigorante.",
+    imagens: [
+      "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-1.jpg",
+      "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-2.jpg",
+      "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-3.jpg",
+      "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-2.jpg",
+    preco: 9.25,
+  },
+  {
+    id: 16,
+    nome: "Dorayaki",
+    descricao:
+      "Panquecas recheadas com anko (pasta de feijão vermelho), um doce clássico do Japão.",
+    imagens: [
+      "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-1.jpg",
+      "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-2.jpg",
+      "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-3.jpg",
+      "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-3.jpg",
+    preco: 7.75,
+  },
+  {
+    id: 17,
+    nome: "Mochi",
+    descricao:
+      "Bolinhos de arroz glutinoso recheados com uma variedade de sabores, como matcha, morango ou chocolate.",
+    imagens: [
+      "./img/imagens-produtos/japao/doces/mochi/mochi-1.jpg",
+      "./img/imagens-produtos/japao/doces/mochi/mochi-2.jpg",
+      "./img/imagens-produtos/japao/doces/mochi/mochi-3.jpg",
+      "./img/imagens-produtos/japao/doces/mochi/mochi-4.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/doces/mochi/mochi-2.jpg",
+    preco: 8.50,
+  },
+  {
+    id: 18,
+    nome: "Tayaki",
+    descricao:
+      "Peixes recheados com massa de panqueca e recheados com creme ou chocolate, um lanche adorável.",
+    imagens: [
+      "./img/imagens-produtos/japao/doces/taiyaki/taiyaki-1.jpg",
+      "./img/imagens-produtos/japao/doces/taiyaki/taiyaki-2.jpg",
+      "./img/imagens-produtos/japao/doces/taiyaki/taiyaki-3.jpg",
+    ],
+    imagem_thumb:
+    "./img/imagens-produtos/japao/doces/taiyaki/taiyaki-2.jpg",
+    preco: 11.95,
   },
 ];
 
