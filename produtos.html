@@ -111,9 +111,9 @@
             <section class="row">
                 <aside class="col-md-4 sumir-sm">
                     <nav class="nav flex-column w-75">
-                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#bebidas">França</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#">Etiópia</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#">Japão</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#franca">França</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#etiopia">Etiópia</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark border-bottom" href="#japao">Japão</a></li>
                     </nav>
                 </aside>
                 <section class="col-md-8" id="produtos-container">
@@ -179,7 +179,7 @@
             card.className = "mb-4";
 
             card.innerHTML = `
-                <section class="row mb-5 g-4 esconder">
+                <section class="row mb-5 g-4 esconder" id="${produto.classe}">
                         <div class="col-md-4">
                             <img src="${produto.imagem_thumb}" alt="Imagem do ${produto.nome}" class="img-thumbnail rounded aproximar" loading="lazy">
                         </div>

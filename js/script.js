@@ -14,6 +14,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/cafe-au-lait/cafe-au-lait-2.jpg",
     preco: 12.50,
+    classe: 'franca',
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/cafe-creme-brule/cafe-creme-brulee-2.jpg",
     preco: 16.75,
+    classe: 'franca',
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/the-a-lavande/The-a-la-Lavande-1.jpg",
     preco: 10.25,
+    classe: 'franca',
   },
   {
     id: 4,
@@ -60,6 +63,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/bebidas/chocolat-chaud/Chocolat-Chaud-3.jpg",
     preco: 14.90,
+    classe: 'franca',
   },
   {
     id: 5,
@@ -75,6 +79,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/croissant/Croissant-4.jpg",
     preco: 7.50,
+    classe: 'franca',
   },
   {
     id: 6,
@@ -90,6 +95,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/mousse-au-chocolat/Mousse-au-Chocolat-3.jpg",
     preco: 9.75,
+    classe: 'franca',
   },
   {
     id: 7,
@@ -103,6 +109,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/franca/doces/tarte-tatin/Tarte-Tatin-2.jpg",
     preco: 18.95,
+    classe: 'franca',
   },
   {
     id: 8,
@@ -118,6 +125,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/etiopia/bebidas/ethiopian-macchiato/ethiopian-macchiato-04.jpg",
     preco: 11.95,
+    classe: 'etiopia',
   },
   {
     id: 9,
@@ -133,6 +141,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/etiopia/doces/bolo-de-mel/bolo-de-mel-03.jpg",
     preco: 8.95,
+    classe: 'etiopia',
   },
   {
     id: 10,
@@ -148,6 +157,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/etiopia/doces/injera-com-doro-wat/injera-com-doro-wat-04.jpg",
     preco: 19.50,
+    classe: 'etiopia',
   },
   {
     id: 11,
@@ -163,6 +173,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/etiopia/doces/kolo/kolo-01.jpg",
     preco: 6.25,
+    classe: 'etiopia',
   },
   {
     id: 12,
@@ -178,6 +189,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/bebidas/cafe-kyoto/cafe-kyoto-2.jpg",
     preco: 10.95,
+    classe: 'japao',
   },
   {
     id: 13,
@@ -193,6 +205,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/bebidas/matcha-latte/matcha-latte-1.jpg",
     preco: 14.75,
+    classe: 'japao',
   },
   {
     id: 14,
@@ -207,6 +220,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/bebidas/sakura-sencha/sakura-sencha-1.jpg",
     preco: 12.50,
+    classe: 'japao',
   },
   {
     id: 15,
@@ -222,6 +236,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/bebidas/yuzu-splarker/yuzu-sparkler-2.jpg",
     preco: 9.25,
+    classe: 'japao',
   },
   {
     id: 16,
@@ -237,6 +252,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/doces/dorayaki/dorayaki-3.jpg",
     preco: 7.75,
+    classe: 'japao',
   },
   {
     id: 17,
@@ -252,6 +268,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/doces/mochi/mochi-2.jpg",
     preco: 8.50,
+    classe: 'japao',
   },
   {
     id: 18,
@@ -266,6 +283,7 @@ const produtos = [
     imagem_thumb:
     "./img/imagens-produtos/japao/doces/taiyaki/taiyaki-2.jpg",
     preco: 11.95,
+    classe: 'japao',
   },
 ];
 
