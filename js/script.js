@@ -293,10 +293,6 @@ function carregarDetalhesDoProduto(produto) {
         </div>
     </section>
     <section class="container my-5">
-    <a class="icon-link icon-link-hover" href="./produtos.html" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
-    <i class="bi bi-arrow-left my-3"></i>
-    Voltar
-    </a>
             <div class="row">
             <div class="col-md-6">
                 <div id="carouselExample" class="carousel slide">
@@ -324,6 +320,9 @@ function carregarDetalhesDoProduto(produto) {
     )}</h2>
                     <a href="#" class="btn btn-outline-dark text-center btn-lg">
                         Encomendar
+                    </a>
+                    <a class="icon-link icon-link-hover btn btn-outline-primary mt-2" href="./produtos.html">
+                    Voltar
                     </a>
                 </article>
             </div>
